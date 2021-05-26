@@ -11,8 +11,8 @@ export default function App() {
   return (
     <div>
       <h1>Counter: {counter}</h1>
-      <button onClick = {()=>dispatch(increment())}>+</button>
-      <button onClick = {()=>dispatch(decrement())}>-</button>
+      <button onClick = {()=>dispatch(increment(10))}>+</button>
+      <button onClick = {()=>dispatch(decrement(5))}>-</button>
 
 
       {isLogged ?<div> user is logeed in</div>:<div> please login first</div>}
